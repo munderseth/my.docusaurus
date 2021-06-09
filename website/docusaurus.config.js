@@ -3,7 +3,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   url: 'https://munderseth.github.io',
-  baseUrl: '/',
+  baseUrl: '/my.docusaurus/',
   organizationName: 'munderseth', // Usually your GitHub org/user name.
   projectName: 'my.docusaurus', // Usually your repo name.
   onBrokenLinks: 'throw',
