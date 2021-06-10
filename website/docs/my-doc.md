@@ -3,57 +3,63 @@ sidebar_label: "My Doc"
 sidebar_position: 3
 ---
 
-# Create a Document
-
-Documents are **groups of pages** connected through:
+# Stuff
 
 - [link](https://testspace.com)
-- [sec](##create-your-first-doc)
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+- One
+- Two
+- quotes - `hey we are`
 
-## Create your first Doc
+## Block Code
 
-Create a markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
+```sh title=hey
+$ testspace
 ```
 
-A new document is now available at `http://localhost:3000/docs/hello`.
 
-## Configure the Sidebar
+Users often use batches to make it easier:
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+```yaml {5-7} title="qa/batches.yaml"
+my-batch:
+  inputs:
+  - A.jpg
+  configs:
+  - base
+  - delta
 
-Add metadatas to customize the sidebar label and position:
-
-```diff title="docs/hello.md"
-+ ---
-+ sidebar_label: "Hi!"
-+ sidebar_position: 3
-+ ---
-
-
-# Hello
-
-This is my **first Docusaurus document**!
+# $ qa batch my-batch
+# => qa --config base:delta run A.jpg
+# => qa --config base:delta run B.jpg
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+## Admonition
 
-```diff title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Tutorial',
--     items: [...],
-+     items: ['hello'],
-    },
-  ],
-};
-```
+:::note
+
+The content and title *can* include markdown.
+
+:::
+
+:::tip You can specify an optional title
+
+Heads up! Here's a pro-tip.
+
+:::
+
+:::info
+
+Useful information.
+
+:::
+
+:::caution
+
+Warning! You better pay attention!
+
+:::
+
+:::danger
+
+Danger danger, mayday!
+
+:::

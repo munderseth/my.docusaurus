@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Testspace',
+  tagline: 'Integrated Test Management',
   url: 'https://munderseth.github.io',
   baseUrl: '/my.docusaurus/',
   organizationName: 'munderseth', // Usually your GitHub org/user name.
@@ -11,24 +11,26 @@ module.exports = {
   favicon: 'img/favicon.ico',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Testspace',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Testspace',
+        src: 'img/testspace.png',
+        href: 'https://testspace.com',
       },
       items: [
         {
           type: 'doc',
           docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
+          //docId: '/',
+          position: 'right',
+          label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
+      //  {to: '/blog', label: 'Blog', position: 'left'},
+        /*{
           href: 'https://github.com/munderseth/my.docusaurus',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {
