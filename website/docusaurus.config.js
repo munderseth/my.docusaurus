@@ -23,7 +23,12 @@ module.exports = {
           docId: 'intro',
           //docId: '/',
           position: 'right',
-          label: 'Documentation',
+          label: 'Docs',
+        },
+        {
+          href: '/',
+          label: 'Home',
+          position: 'right',
         },
       //  {to: '/blog', label: 'Blog', position: 'left'},
         /*{
@@ -40,8 +45,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Docs',
+              to: '/docs/',
+            },
+            {
+              label: 'Home',
+              to: '/',
             },
           ],
         },
