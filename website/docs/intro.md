@@ -1,19 +1,21 @@
 ---
 sidebar_position: 1
 slug: /
+title: Introduction
 ---
-
-# Overview
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
 - Check deployment locally
 
-## Getting Started
+## Overview
 
 Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+
+### My H3
+WIP here
 
 ## Generate a new site
 

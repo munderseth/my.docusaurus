@@ -1,0 +1,108 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ .hero__title {
+    color: inherit;
+  }
+  
+  .markdown>h2 {
+    border-top: 1px solid #efefef;
+    padding-top: 15px;
+  }
+  
+  .markdown p img {
+    max-width: 80%;
+    border: 1px solid gray;
+  }
+  
+  .markdown p em img {
+    border: none;
+  }
+  
+  .contents ul > li {
+    font-size: 12px;
+  }
+  
+  blockquote {
+    border-left-color: var(--ifm-color-primary);
+    background-color: #f7f7f7;
+  }
+  
+  .menu .menu__link {
+    border-radius: 0;
+  }
+  
+  .menu .menu__list .menu__list {
+    border-left: 1px solid #eee;
+  }
+  
+  .menu .menu__list-item .menu__list .menu__list-item {
+    font-size: 14px;
+  }
+  
+  .menu .menu__list-item .menu__list .menu__list-item .menu__list .menu__list-item {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 26px;
+  }
+  
+  .table-of-contents li ul li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .table-of-contents li ul a.table-of-contents__link {
+    font-size: 12px;
+  }
+  
+  .flx-green {
+    color: #00b852;
+  }
+  .flx-blue {
+    color: #0094d9;
+  }
+  .flx-gray {
+    color: #676568;
+  }
+  
+  /* You can override the default Infima variables here. */
+  :root {
+    --ifm-color-primary: #0094d9;
+    --ifm-color-primary-dark: #0085c3;
+    --ifm-color-primary-darker: #0076ad;
+    --ifm-color-primary-darkest: #006797;
+    --ifm-color-primary-light: #199edc;
+    --ifm-color-primary-lighter: #32a9e0;
+    --ifm-color-primary-lightest: #4cb4e4;
+  
+    --ifm-navbar-link-color: #676568;
+  
+    --ifm-heading-color: #676568;
+  
+  }
+  
+  .docusaurus-highlight-code-line {
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+  }
+  
+  .react-toggle {
+    display: none !important;
+  }
+  
+  .DocSearch-Button-Key {
+    display: none !important;
+  }

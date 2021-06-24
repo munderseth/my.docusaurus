@@ -18,16 +18,10 @@ module.exports = {
         href: 'https://testspace.com',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          //docId: '/',
-          position: 'right',
-          label: 'Docs',
-        },
+    
         {
           href: '/',
-          label: 'Home',
+          label: 'Help',
           position: 'right',
         },
       //  {to: '/blog', label: 'Blog', position: 'left'},
@@ -39,53 +33,42 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/',
-            },
-            {
-              label: 'Home',
-              to: '/',
+              label: 'Contact',
+              to:    'mailto:contact@testspace.com',
             },
           ],
         },
         {
-          title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Issues',
+              to: 'https://github.com/testspace-com/testspace.support/issues',
             },
           ],
         },
         {
-          title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Discussions',
+              to: 'https://github.com/testspace-com/testspace.support/discussions',
             },
+          ],
+        },
+        {
+          items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              to: 'https://github.com/testspace-com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} S2 Technologies, Inc.`,
     },
   },
   presets: [
@@ -94,9 +77,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/munderseth/my.docusaurus/edit/main/website/',
         },
         blog: {
           showReadingTime: true,

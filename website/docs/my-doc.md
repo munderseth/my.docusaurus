@@ -1,9 +1,9 @@
 ---
-sidebar_label: "My Doc"
-sidebar_position: 3
+#sidebar_label: "My Doc"
+sidebar_position: 2
 ---
 
-# Stuff
+# Gettting Started
 
 - [link](https://testspace.com)
 - One
