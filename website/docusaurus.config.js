@@ -70,7 +70,41 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} S2 Technologies, Inc.`,
     },
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+  
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: false,
+      //disableSwitch: true,
+  
+      // Should we use the prefers-color-scheme media-query,
+      // using user system preferences, instead of the hardcoded defaultMode
+      respectPrefersColorScheme: false,
+  
+      // Dark/light switch icon options
+      switchConfig: {
+        // Icon for the switch while in dark mode
+        darkIcon: '🌙',
+        // CSS to apply to dark icon,
+        // React inline style object
+        // see https://reactjs.org/docs/dom-elements.html#style
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+  
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        lightIcon: '\u{1F602}',
+  
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      },
+    },
   },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -89,7 +123,7 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/customv2.css'),
         },
       },
     ],

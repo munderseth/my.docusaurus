@@ -16,8 +16,9 @@
   }
   
   .markdown>h2 {
-    border-top: 1px solid #efefef;
-    padding-top: 15px;
+    border-top: 10px solid #efefef;
+    padding-top: 55px;
+    font-size: 1px;
   }
   
   .markdown p img {
