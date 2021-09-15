@@ -1,6 +1,25 @@
 # my.docusaurus.video
 Sandbox for mp4 video
 
+## Run
+
+```
+cd website
+yarn start
+```
+
+Deploy to pages:
+```
+cd website
+yarn deploy
+```
+
+First time setup:
+```
+cd website
+npm install
+```
+
 ## Setup
 
 ```
