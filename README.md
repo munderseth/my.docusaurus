@@ -1,5 +1,12 @@
-# my.docusaurus.video
-Sandbox for mp4 video
+# my.docusaurus
+Sandbox for Docusaurus.
+
+
+Using the **repo** on desktop the 1st time requires installation:
+```
+cd website
+npm install
+```
 
 ## Run
 
@@ -11,16 +18,11 @@ yarn start
 Deploy to pages:
 ```
 cd website
-yarn deploy
+./doploy-it.sh
 ```
 
-First time setup:
-```
-cd website
-npm install
-```
-
-## Setup
+## Initial Setup
+Setup
 
 ```
 npx @docusaurus/init@latest init website classic
@@ -38,6 +40,18 @@ title: Hello
 ---
 
 import ReactPlayer from 'react-player'
+```
+
+### Configuration
+The `docusaurus.config.js` updates required for GH Pages:
+
+```
+url: 'https://munderseth.github.io',
+baseUrl: '/my.docusaurus.new/',
+organizationName: 'munderseth', 
+projectName: 'my.docusaurus.new', 
+..
+presets: [] //require updates to repo name
 ```
 
 ## Videos
