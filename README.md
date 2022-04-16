@@ -1,35 +1,64 @@
-# my.docusaurus
-Sandbox for Docusaurus.
+# My Docusaurus
+Sandbox for Docusaurus along with notes and examples.
 
+
+## Commands
 
 Using the **repo** on desktop the 1st time requires installation:
 ```
-cd website
 npm install
 ```
 
-## Run
+Run locally:
 
 ```
-cd website
 yarn start
 ```
 
-Deploy to pages:
+Build:
 ```
-cd website
-./doploy-it.sh
+yarn build
 ```
 
-## Initial Setup
-Setup
+Deploy:
+```
+./deploy.sh
+```
+
+Version of Docusaurus 
+```
+npx docusaurus --version
+```
+
+## Setup
+To setup using the root vs website folder. Copy content to the *root* after *npm .. init website classic*
 
 ```
 npx @docusaurus/init@latest init website classic
 ```
 
+### Configuration
+Changes to `docusaurus.config.js`:
+
+- url: `https://munderseth.github.io`,
+- baseUrl: `/my.docusaurus/`,
+- organizationName: `munderseth`,
+- projectName: `my.docusaurus`,  // same as Repo name
+- editUrl: `https://github.com/munderseth/my.docusaurus/edit/main/`,
+- href: `https://github.com/munderseth/my.docusaurus`,      
+
+To change styling within **presets=>theme** - `src/css/customDefault.css`
+
+### Doc-only mode
+To use a [Docs-only mode](https://docusaurus.io/docs/docs-introduction#docs-only-mode) do the following:
+
+- Within *presets=>docs* add `routeBasePath: '/',`
+- rename `index.js` to `index.js.save`
+- add `slug: /` to landing page (i.e. intro.md)
+
+### MDX Usage
+
 ```
-cd website
 npm install react-player
 ```
 Within a `mdx` file, below front matter:
@@ -42,17 +71,17 @@ title: Hello
 import ReactPlayer from 'react-player'
 ```
 
-### Configuration
-The `docusaurus.config.js` updates required for GH Pages:
 
-```
-url: 'https://munderseth.github.io',
-baseUrl: '/my.docusaurus.new/',
-organizationName: 'munderseth', 
-projectName: 'my.docusaurus.new', 
-..
-presets: [] //require updates to repo name
-```
+## Deployment
+When using GitHub for hosting via Pages, specific repos are reserved for *free* domains - `org/user.github.io`. For example, `munderseth.github.io` and `s2technologies.github.io`. All other repos use **subfolders** within the associated domain. Note, that GitHub pages enables *custom domains* for all repos. 
+
+There are some constraints:
+
+- For repos using *subfolders* can **not** set *baseUrl:* `/`. This removes the subfolder usage and Docusaurus site will **not load properly**. Few Notes:
+  - If using a **custom domain** this will work
+  - If running only **locally** this will work
+- When setting the *baseUrl:* `/repo-name` the domain path will 1st be rendered (which is not the preferred starting page) when running locally
+
 
 ## Videos
 Examples below.
@@ -77,27 +106,6 @@ Examples below.
 
 ## References
 
-### Commands
-
-Version of Docusaurus 
-```
-npx docusaurus --version
-```
-
-`package.json`: (always use same version #)
-```
-"dependencies": {
-  "@docusaurus/core": "^2.0.0-beta.0",
-  "@docusaurus/preset-classic": "^2.0.0-beta.0",
-  // ...
-}
-```
-To re-install:
-```
-cd website
-npm install
-```
-
-### Articles
 - https://docusaurus.io/docs/markdown-features/react
 - https://www.npmjs.com/package/react-player
+

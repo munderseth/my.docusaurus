@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   title: 'Site Sandbox',
   tagline: 'Dinosaurs sandbox',
   url: 'https://munderseth.github.io',
-  baseUrl: '/my.docusaurus.new/',
+  baseUrl: '/my.docusaurus/',
   organizationName: 'munderseth', // Usually your GitHub org/user name.
   projectName: 'my.docusaurus.new', // Usually your repo name.
   onBrokenLinks: 'throw',
@@ -21,13 +21,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/munderseth/my.docusaurus.new/edit/main/website/',
+          editUrl: 'https://github.com/munderseth/my.docusaurus/edit/main/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/munderseth/my.docusaurus.new/edit/main/website/blog/',
+            'https://github.com/munderseth/my.docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,7 +54,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/munderseth/my.docusaurus.new',
+            href: 'https://github.com/munderseth/my.docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -90,7 +90,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/munderseth/my.docusaurus.new',
+                href: 'https://github.com/munderseth/my.docusaurus',
               },
             ],
           },
